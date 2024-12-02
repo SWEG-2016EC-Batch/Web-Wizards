@@ -14,5 +14,5 @@ graph TD
     L --> M[/Output Gross salary/]
     M --> N[/Output Pension and Tax Deductions/]
     N --> O[/Output Net salary/]
-    O --> |No|P([End])
+    O --> P([End])
   
