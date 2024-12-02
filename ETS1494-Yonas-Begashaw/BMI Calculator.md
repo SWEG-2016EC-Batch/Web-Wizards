@@ -3,6 +3,7 @@
 **Output:** BMI.   
 #### Operation  
 - Variable declaration that holds an input and operation results.
+- Read mass and height.   
 - Calculat BMI: BMI = mass / height × height.
 - Print BMI.
 - IF BMI < 18, print "You are underweight."
