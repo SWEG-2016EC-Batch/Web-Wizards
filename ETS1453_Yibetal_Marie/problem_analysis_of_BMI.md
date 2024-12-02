@@ -59,70 +59,101 @@ work for multiple person before terminated.
 
 > 8.end the program
 
-3.Design the program
-=
-1.Variable declaration and initialisation
--
--->float height;
+# 2.pseudocode
+- 1.Start the program
+- 2.Declare variables for weight,height,BMI,and attempts
+- 3.read weight(W) input from user 
+- 4.check valid of W or W < 0
+- 5.if it is so , reduce the attempts by 1
 
--->int weight ;
+------>5.1 check attempts greater than 0 ,and then give prompt message and goto step3
 
--->int user_choice = 'y';
+------>5.2 else stop the program
 
--->int attempts = 3;
+- 6.read height(H) input from the user
+- 7.check the validity of H or H<0
+- 8.if so(invalid or H<0),reduce the attempts by 1
 
-2.read input datas from user:
--
--->cout<<"Enter the weight of a person";
+------->8.1 check attempts greater than 0 , then give prompt message and goto step6
 
--->cin>>weight;
+------->8,2 else stop the program
 
--->cout<<"Enter the height of a person";
+- 9.Calculate the body mass index (BMI)
 
--->cin>>height;
+---------> BMI = weight/(height*height)
 
-3.check the user inputs negative number:
--
---> if so , give chance of attempts = 3 , after finish his/her attempts terminate the program**
+---------> display the BMI
 
---> else go forward
+- 10.check the BMI of a person
 
-4.check the user input invalid input like character 
--
--->if so , give the user to try another chance until he/she finish his/her attempts
+--------->10.1 if BMI < 18.5 so , display a person is underweight
 
--->and write prompt message : cout<<"you have"<<attempts<<"chances,so please enter valid input";
+--------->10.2 if BMI > 18.5 and BMI < 24.9 , then display a peson is normal weight
 
---> else go forward
+--------->10.3 else , display the person is obese
 
-5.perform an operation
--
---> float body_mass_index = weight/(height*height);
+- 11. check the user wants to continue calculating or not
 
-6.read the prompt message and print the result (body_mass_index)
--
---> cout<<"The body mass index of a person is: "<<body_mass_index<<endl;
-7.check the user's body mass index:
--
-7.1. if user's BMI < 18.5,
-  
--------> cout<<"You are underweight.";
+------->if user's respons is yes , goto step 3
 
-7.2. if user's BMI > 18.5 && < 24.5;
+------->else , terminate the program
 
---------> cout<<"You are Normal weight.";
+12.stop the program
 
-7.3. if user's BMI > 30.5,
 
-----> cout<<"you are obese";
+``` mermaid
+flowchart TD
+A(statrt)-->B[/read weight/]
+B[read weight] --> C{check validity/w && w > 0}
+C-->|Invalid| D{check attempts>3}
+D-->|No| B
+C-->|Valid| F[/read height/]
+F-->G{check H and H>0}
+G-->|Invalid| H{check attempts > 3}
+H-->|No| F
+G-->|Valid| J[BMI=W/H*H]
+J-->M[/display BMI/]
+M-->N{check BMI < 18.5}
+N-->|Yes| O[/print 'underweight'/]
+N-->|No| P{check BMI > 18.5 && BMI<24.9}
+P-->|Yes| Q[/print 'Normal weight'/]
+P-->|No| R[/print 'obese'/]
+O--> S{user choice to continue}
+Q-->S
+R-->S
+S-->|Yes| B
+S-->|No| T(stop)
+D-->|Yes| T
+H-->|Yes| T
 
-8.read user's choices(input) if he/she want to continue or not
--
--->cout<<"Do you want to continue calculating for other person.press (y/n): ";
+linkStyle 0 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 1 stroke-width:2px,fill:None,stroke:red,shape:polyline
+linkStyle 2 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 3 stroke-width:2px,fill:None,stroke:yellow,shape:polyline
+linkStyle 4 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 5 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 6 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 7 stroke-width:2px,fill:None,stroke:green,shape:polyline
+linkStyle 8 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 9 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 10 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 11 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 12 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 13 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 14 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 15 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 16 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 17 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 18 stroke-width:2px,fill:None,stroke:purple,shape:polyline
+linkStyle 19 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 20 stroke-width:2px,fill:None,stroke:blue,shape:polyline
+linkStyle 21 stroke-width:2px,fill:None,stroke:blue,shape:polyline
 
--->cin>>user_choice;
 
---> if user_choice == 'y',goto 3.2
 
---> else stop the program
+
+
+
+
+
 
