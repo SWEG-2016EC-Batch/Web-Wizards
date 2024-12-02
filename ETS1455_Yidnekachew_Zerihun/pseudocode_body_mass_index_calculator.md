@@ -10,22 +10,19 @@
   - Prompt user to enter `height` in meters
   - Read `height` from input
 
-  ## Calculate BMI
-  - Calculate `bmi` as `weight / (height * height)`
+  ## Calculate BMI using the formula:  
+   BMI = weight / (height * height)
 
-  ## Output BMI
-  - Print "BMI: `bmi`"
+  ## Display the calculated BMI.
 
   ## Determine weight category
-  - If `bmi` is less than 18 then
-    - Print "Category: Underweight"
-  - Else if `bmi` is between 18 and 25 (inclusive) then
-    - Print "Category: Normal weight"
-  - Else
-    - Print "Category: Overweight"
+   - If BMI < 18 → Output: "Underweight"
+   - If 18 <= BMI <= 25 → Output: "Normal weight"
+   - If BMI > 25 → Output: "Overweight"
 
   ## Ask if the user wants to process another person
   - Prompt "Do you want to calculate BMI for another person? (0/any char)"
   - Read user choice
-  - If choice is not '0'  then
+  - If choice is  '0',repeat the process  
+  - if choice is  any other character,terminate the program
     - Exit loop
