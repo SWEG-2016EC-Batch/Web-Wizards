@@ -1,7 +1,6 @@
 # Pseudocode for Calculating Employee Salary
 
 1.Start
-
 2. Declare variables
   - Declare `employee_name` as string
   - Declare `weekly_working_hours`, `bonus_rate`, `base_salary`, `bonus_payment`, `gross_salary`, `net_salary`, 
