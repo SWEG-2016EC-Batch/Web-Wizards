@@ -6,8 +6,6 @@ graph TD
     D --> E[/Output Transmission Time in seconds/]
     E --> F[Convert Transmission Time to days,hours, minutes, and seconds]
     F --> G[/Output Converted Time/]
-    G --> H{Another File?}
-    H --> |Yes|B
-    H --> |No|I
+    G --> H([end])
   
  
