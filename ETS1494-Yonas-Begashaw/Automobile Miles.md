@@ -3,6 +3,7 @@
 **Output:** Number of miles car can drive without refueling.    
 #### Operation:   
 - Variable declaration that holds an input and operation results.
+- Read fuel tank capacity and miles per gallon of car.   
 - Calculate number of miles: number of miles = fuel tank capacity * miles per gallon.
 - Print number of miles.
 
