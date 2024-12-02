@@ -1,11 +1,13 @@
 # Pseudocode for Calculating Employee Salary
 
-## Declare variables
-- Declare `employee_name` as string
-- Declare `weekly_working_hours`, `bonus_rate_per_hour`, `base_salary`, `bonus_payment`, `gross_salary`, `net_salary` as double
-- Declare `pension`, `tax` as double
+1.Start
 
-## Read input values from the user
+2. Declare variables
+- Declare `employee_name` as string
+- Declare `weekly_working_hours`, `bonus_rate`, `base_salary`, `bonus_payment`, `gross_salary`, `net_salary`, `tax_deduction`,`pention` as double
+- Declare `pension_rate`, `tax_deduction_rate` as double
+
+3. Read input values from the user
 - Prompt user to enter `employee_name`
 - Read `employee_name` from input
 - Prompt user to enter `weekly_hours`
@@ -15,23 +17,18 @@
 - Prompt user to enter `base_salary`
 - Read `base_salary` from input
 
-## Calculate bonus payment
-- Set `bonus_payment` to `weekly_working_hours` multiplied by `bonus_rate_per_hour` multiplied by `base_salary`
+4. Calculations
 
-## Calculate gross salary
-- Set `gross_salary` to `base_salary` plus `bonus_payment`
+- Calculate bonusPayment = weekly_working_hours * bonus_rate.
+- Calculate grossSalary = base_salary + bonus_payment.
+- Calculate tax_deduction = tax_deduction_rate * gross_salary.
+- Calculate pention = pention_rate * base_salary.
+- Calculate net_salary = gross_salary - (pension + tax_deduction).
 
-## Calculate deductions
-- Set `pension` to 5% of `gross_salary`
-- Set `tax` to 15% of `gross_salary`
+5. Output
 
-## Calculate net salary
-- Set `net_salary` to `gross_salary` minus (`pension` plus `tax`)
-
-## Output the results
-- Print `employee_name`
-- Print `gross_salary`
-- Print `bonus payment`
-- Print `tax deduction`
-- Print `pension`
-- Print `net salary`
+- Display bonus_payment with name: "Bonus Payment of [name] is: $[bonus_payment]".
+- Display gross_salary with name: "Gross Salary of [name] is: $[gross_salary]".
+- Display tax_deduction with name: "Tax deduction of [name] is: $[tax_deduction]".
+- Display pention with name: "Gross Salary of [name] is: $[pention]".
+- Display net_salary with name: "Net Salary of [name] is: $[net_salary]".
