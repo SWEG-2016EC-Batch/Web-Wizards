@@ -3,7 +3,7 @@ using namespace std;
 int main() {
 // Declare variables
     string name;
-    double base_salary,weekly_working_hour,bonus_rate,bonus_payment,gross_salary,net_salary,tax_deduction_rate=0.15,pention_rate=0.05;
+    double base_salary,weekly_working_hour,bonus_rate,bonus_payment,gross_salary,net_salary,tax_deduction_rate=0.15,pention_rate=0.05,continue1;
 // Declare variables
     cout<<"please enter the employee name: ";
     getline(cin,name);
@@ -28,7 +28,6 @@ int main() {
     cout<<name<<"'s deducted tax is: "<<tax_deduction<<endl;
     cout<<name<<"'s pention is: "<<pention<<endl;
     cout<<name<<"'s net salary is: "<<net_salary<<endl;
-    
     
     
 }
