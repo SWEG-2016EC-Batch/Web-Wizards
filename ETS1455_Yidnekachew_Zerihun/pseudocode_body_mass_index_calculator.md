@@ -15,7 +15,7 @@ Start
   - If not goto step 6
 
 3. Calculate BMI using the formula:  
-   BMI = weight / (height * height)
+   `BMI = weight / (height * height)`
 
 4. Display the calculated BMI.
 
