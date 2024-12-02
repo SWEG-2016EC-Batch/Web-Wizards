@@ -1,5 +1,5 @@
  # Pseudocode for Calculating Transmission Time
-1.start
+  1.start
 
 2. Declare variables
      - Declare `file_size` as double
@@ -27,4 +27,6 @@
 
 7. Output the converted result
       - Print "Which is approximately `days` days, `hours` hours, `minutes` minutes, and `seconds` seconds."
+
+
 8.End
