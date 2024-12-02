@@ -4,17 +4,15 @@ graph TD
     B --> C[/Input Weekly Working Hours/]
     C --> D[/Input Bonus Rate Per Hour/]
     D --> E[/Input Base Salary/]
-    E --> F[Calculate Bonus Payment = Weekly Working Hours * Bonus Rate Per Hour]
+    E --> F[Calculate Bonus Payment = Base_salary * Weekly Working Hours * Bonus Rate Per Hour]
     F --> G[Calculate Gross Salary = Base Salary + Bonus Payment]
     G --> H[Calculate Pension = 5% of Gross Salary]
     H --> I[Calculate Tax = 15% of Gross Salary]
     I --> J[Calculate Net Salary = Gross Salary - Pension - Tax]
     J --> K[/Output Employee Name/]
-    K --> L[/Output Gross Salary/]
-    L --> M[/Output Net Salary/]
-    M --> N[/Output Bonus Payment/]
-    N --> O[/Output Pension and Tax Deductions/]
-    O --> P{Another Employee?}
-    P --> |Yes|B
-    P --> |No|S([End])
+    K --> L[/Output Bonus Payment/]
+    L --> M[/Output Gross salary/]
+    M --> N[/Output Pension and Tax Deductions/]
+    N --> O[/Output Net salary/]
+    O --> |No|P([End])
   
