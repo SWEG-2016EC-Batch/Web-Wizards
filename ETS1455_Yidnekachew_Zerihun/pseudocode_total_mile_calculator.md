@@ -1,18 +1,25 @@
-# Pseudocode for Calculating Driving Range Without Refueling
+# Pseudo Code for Fuel Efficiency Calculation
+1. **Start:**
+2. **Initialize Variables:**
+   - `tankCapacity` (float)
+   - `milesPerGallon` (float)
+   - `totalMiles` (float)
 
-## Declare variables
-- Declare `tank_capacity` as double
-- Declare `miles_per_gallon` as double
-- Declare `total_miles` as double
+3. **Prompt user for tank capacity:**
+   - Display message: "Enter the capacity of the fuel tank in gallons"
+   - Get input for `tankCapacity`
+   - **Validation:**
+     - If `tankCapacity <= 0` or invalid input, re-prompt user up to 3 attempts.
+     - If input is invalid for 3 times, exit program.
 
-## Read input values from the user
-- Prompt user to enter `tank_capacity` in gallons
-- Read `tank_capacity` from input
-- Prompt user to enter `miles_per_gallon`
-- Read `miles_per_gallon` from input
+4. **Prompt user for miles per gallon:**
+   - Display message: "Enter the miles per gallon the automobile can be driven"
+   - Get input for `milesPerGallon`
+  
+  5. **Calculate Total Miles:**
+   - `totalMiles = tankCapacity * milesPerGallon`
 
-## Calculate total miles
-- Calculate `total_miles` as `tank_capacity` multiplied by `miles_per_gallon`
+6. **Display the result:**
+   - Print: "The automobile can be driven X miles without refueling" where X is `totalMiles`.
 
-## Output the result
-- Print "The automobile can be driven `total_miles` miles without refueling."
+7.**End of Program**
