@@ -2,16 +2,18 @@
 graph TD
     A([Start]) --> B[/Input Weight in kilograms/]
     B --> C[/Input Height in meters/]
-    C --> D[Calculate BMI = weight / height / height]
-    D --> E{Is BMI < 18?}
-    E --> F[Category: Underweight]
-    E --> G{Is BMI <= 25?}
-    G --> H[Category: Normal weight]
-    G --> I[Category: Overweight]
-    F --> J[/Output BMI and Category/]
-    H --> J[/Output BMI and Category/]
-    I --> J[/Output BMI and Category/]
-    J --> K{Another Person?}
-    K --> |Other character| N([End])
-    K --> |0| B
+    C --> D{Is height > 0 && weight >= 0}
+    D --> |Y|E
+    E --> F[Calculate BMI = weight / height / height]
+    F --> G{Is BMI < 18?}
+    G --> H[Category: Underweight]
+    G --> I{Is BMI <= 25?}
+    I --> J[Category: Normal weight]
+    I --> K[Category: Overweight]
+    H --> L[/Output BMI and Category/]
+    J --> L[/Output BMI and Category/]
+    K --> L[/Output BMI and Category/]
+    L --> M{Another Person?}
+    M --> |Other character| N([End])
+    M --> |0| B
     
