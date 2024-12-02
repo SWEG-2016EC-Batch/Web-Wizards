@@ -9,7 +9,7 @@
 - IF BMI < 18, print "You are underweight."
 - If BMI >= 18.5 and BMI < 25, print "You have a healthy weight."
 - If BMI >= 25, print "You are overweight."
-- 
+- Ask if they want to calculate again.   
 
 # Pseudocode  
 1. Start.
