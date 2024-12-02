@@ -12,6 +12,7 @@ graph TD
     H --> L[/Output BMI and Category/]
     J --> L[/Output BMI and Category/]
     K --> L[/Output BMI and Category/]
+    L --> R
     D --> |N| M{Is height <= 0 && weight >= 0}
     M --> |Yes|N[/Output U input invalid height/]
     N --> R
