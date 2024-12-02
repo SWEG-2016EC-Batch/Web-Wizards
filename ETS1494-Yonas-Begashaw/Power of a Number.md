@@ -1,15 +1,20 @@
-### Problem Analysis   
+# Problem Analysis   
 **Input:** Two numbers x and y.  
-**Output:** The result of x the power of y.   
+**Output:** The result of x the power of y.     
+#### Operation:  
+- Variable declarizations that holds an input and oeration results.
+- Read numbers x and y.
+- Calculate resut: result = x^y.
+- Print result.  
 
-### Pseudocode  
+# Pseudocode  
 1. Start.
 2. Input x and y.
 3. Calculate resut: result = x^y.
-4. Display result.
+4. Print result.
 5. End.
 
-### Flowchart   
+# Flowchart   
 ```mermaid   
 flowchart TD   
 A([Start]) --> B[/Input x and y/]  
