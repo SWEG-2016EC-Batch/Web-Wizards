@@ -1,7 +1,7 @@
 # Pseudocode for Calculating Transmission Time
 1.start
 2. Declare variables
-- Declare `file_size` as double
+     - Declare `file_size` as double
 - Declare `transmission_rate` as double, initialize to 960 (characters per second)
 - Declare `transmission_time` as double
 
