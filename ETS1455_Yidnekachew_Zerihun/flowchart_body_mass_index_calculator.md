@@ -13,7 +13,23 @@ graph TD
     H --> L[/Output BMI and Category/]
     J --> L[/Output BMI and Category/]
     K --> L[/Output BMI and Category/]
-    L --> M{Another Person?}
-    M --> |Other character| N([End])
-    M --> |0| B
+    D --> |N| M{Is height <= 0 && weight >= 0}
+    M --> |Yes|N[/Output U input invalid height/] 
+    M --> |No|O{Is height > 0 && weight < 0}
+    O --> |Yes|P[/Output U input invalid weight/]
+    O --> |No|Q[/Output U input invalid weight and height/]
+    Q --> R{Another Person?}
+    R --> |Other character| S([End])
+    R --> |0| B
+    
+
+
+
+
+
+
+
+
+
+ 
     
