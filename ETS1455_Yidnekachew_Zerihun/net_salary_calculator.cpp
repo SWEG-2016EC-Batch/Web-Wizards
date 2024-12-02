@@ -2,11 +2,11 @@
 using namespace std;
 int main() {
 // Declare variables
-    char name[20];
+    string name;
     double base_salary,weekly_working_hour,bonus_rate,bonus_payment,gross_salary,net_salary,tax_deduction_rate=0.15,pention_rate=0.05;
 // Declare variables
     cout<<"please enter the employee name: ";
-    cin>>name;
+    getline(cin,name);
     cout<<"please,enter "<<name<<"'s base salary: ";
     cin>>base_salary;
     cout<<"please enter "<<name<<"'s weekly working hour: ";
@@ -14,7 +14,7 @@ int main() {
     cout<<"please enter the bonus rate which is between 0 and 1: ";
     cin>>bonus_rate;
 // Calculate bonus payment
-    bonus_payment=weekly_working_hour*bonus_rate;
+    bonus_payment=base_salary*weekly_working_hour*bonus_rate;
 // Calculate gross salary
     gross_salary=base_salary+bonus_payment;
 // Calculate deductions
