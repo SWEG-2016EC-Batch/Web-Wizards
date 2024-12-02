@@ -28,7 +28,7 @@ Start
    - If height <= 0 and weight >= 0 → Output: "invalid height" goto step 7
    - If height > 0 and weight < 0 → Output: "invalid weight" goto step 7
    - If height <=0 and weight < 0 → Output: "invalid height and weight" goto step 7
-8. Ask if the user wants to process another person
+7. Ask if the user wants to process another person
   - If choice is  '0',repeat the process  
   - if choice is  any other character,terminate the program
     - Exit loop
