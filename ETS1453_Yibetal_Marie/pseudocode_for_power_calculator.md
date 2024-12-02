@@ -64,7 +64,7 @@ O--> P{ i < y }
 P-->|True| Q[ x = temp1*x ]
 Q-->R[ i = i + 1 ]
 R-->P
-P-->T[print x]
+Q-->T[print x]
 L-->T
 N-->T
 P-->|False| S(STOP)
