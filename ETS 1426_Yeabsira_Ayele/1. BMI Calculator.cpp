@@ -51,7 +51,7 @@ int main() {
             else if (BMI>=30){
                 cout<<"You are obese"<<endl;
             }
-                }
+          }
         }
         // Ask to continue or terminate
         cout << "Calculate again? 1: Yes, 0: No: ";
