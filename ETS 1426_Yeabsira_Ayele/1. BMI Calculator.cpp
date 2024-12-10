@@ -4,7 +4,9 @@ int main() {
     double weight, height, BMI, attempts;
     int again = 1;
     const int maxAttempts = 3; // Maximum number of invalid input attempts
-  
+  /*Make a program that calculates the Body Mass Index (BMI) of a person and determine weather the person is
+    in normal weight, under weight or over weight. BMI is calculated as (BMI = w/h*h). Make the program to
+    work for multiple person before terminated.*/
   while (again == 1) {    //again to calculate
         attempts = 0;
         //Input weight with remaining attempts
