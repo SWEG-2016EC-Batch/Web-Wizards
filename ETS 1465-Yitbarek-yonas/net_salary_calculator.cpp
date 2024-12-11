@@ -1,3 +1,6 @@
+/*This C++ program calculates an employee's net salary based on their basic salary, worked hours, and bonus rate. 
+    It handles input validation to ensure accuracy and applies taxes and pension deductions. 
+    The program supports continuous calculations for multiple employees.*/
 #include <iostream>
 using namespace std;
 int main() {
