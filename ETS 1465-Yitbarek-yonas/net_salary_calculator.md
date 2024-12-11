@@ -48,6 +48,8 @@
 
 ## End
 14. Stop.
+# FlowChart  for Net Salary Calculator
+```mermaid
 graph TD
     A[Start]
     B[Initialize variables: worked_hour, gross_salary, basic_salary, bonusRate, pensionRate, tax, bonus, pension, net_salary, userInput]
