@@ -38,7 +38,7 @@ if(sum >= 90) {
     }
 cout << "\nWould you like to calculate for another student? (q to quit else another charachter to continue): ";
         cin >> quitChoice;
-    }while(quitChoice=='q' && quitChoice=='Q');
+    }while(quitChoice=='c' || quitChoice=='C');
 
     return 0;
 }
