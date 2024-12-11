@@ -27,7 +27,7 @@
 
 ## User Continuation
 6. Prompt the user:
-   - Enter 'q' or 'Q' to quit.
+   - Enter 'c' or 'C' to continue.
    - Enter any other character to calculate for another student.
 
 ## Loop Condition
