@@ -69,8 +69,8 @@
             - Print numbers in decreasing order
 
 5. **Ask user if they want to continue or quit**
-    - Prompt user: "Would you like to calculate for another pattern? (c to  continue , any other key to quit )"
-    - If user enters 'c', continue the  program, otherwise quit
+    - Prompt user: "Would you like to calculate for another pattern? (y to  continue , any other key to quit )"
+    - If user enters 'y', continue the  program, otherwise quit
 
 6. **End Program**
  # FlowChart for Pattern Program
