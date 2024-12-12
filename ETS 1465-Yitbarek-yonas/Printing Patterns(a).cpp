@@ -178,10 +178,10 @@ int main() {
         }
         
         // Ask the user if they want to continue or quit
-        cout << "\nWould you like to calculate for another pattern? (q to quit, any other key to continue): ";
+        cout << "\nWould you like to calculate for another pattern? (either upper or lower 'y' to continue or other character to terminate): ";
         cin >> quitChoice;
 
-    } while (quitChoice == 'y' || quitChoice == 'y');  
+    } while (quitChoice == 'y' || quitChoice == 'Y');  
 
     return 0;
 }
