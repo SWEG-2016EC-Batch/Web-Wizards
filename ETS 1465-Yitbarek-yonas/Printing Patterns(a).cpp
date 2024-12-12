@@ -22,7 +22,7 @@ int main() {
         cout << "9. Inverted Half Pyramid" << endl;
         cout << "10. Hollow Inverted Half Pyramid" << endl;
         cout << "11. Full Pyramid" << endl;
-        cout << "12. Inverted Number Pyramid" << endl;
+        cout << "12. Inverted Full Pyramid" << endl;
  trial:
         cout << "Enter your choice (1-12): ";
         cin >> choice;
@@ -181,7 +181,7 @@ int main() {
         cout << "\nWould you like to calculate for another pattern? (q to quit, any other key to continue): ";
         cin >> quitChoice;
 
-    } while (quitChoice == 'y' || quitChoice == 'y');  // Corrected condition with logical OR (||)
+    } while (quitChoice == 'y' || quitChoice == 'y');  
 
     return 0;
 }
