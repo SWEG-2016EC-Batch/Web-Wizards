@@ -1,4 +1,4 @@
-# Pseudocode for Pattern Program
+# Pseudocode for Printing Patterns(a)
 
 ## Start Program
 
@@ -73,7 +73,7 @@
     - If user enters 'y', continue the  program, otherwise quit
 
 6. **End Program**
- # FlowChart for Pattern Program
+ # FlowChart for Printing Patterns(a)
   ```mermaid
 flowchart TD
     A[Start Program] --> B[Initialize Variables: choice, quitChoice]
