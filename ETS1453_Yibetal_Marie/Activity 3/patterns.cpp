@@ -128,6 +128,18 @@ int main() {
     cout<<"inverted full pyramid"<<endl;
     cout<<"----------------------------"<<endl;
 
+    for (int i = 1; i <= 6; i++) {
+        for (int j = 1; j <= 6 + i - 1; j++) {
+            if (j <= 6 - i) {
+                cout << " ";
+            }else if (j == 6 - i + 1 || j == 6 + i - 1 || i == 6){
+                cout << "*"; } else {
+                    cout << " ";
+                }
+        } cout<<endl;
+        }
+    cout<<"upward hallow full pyramid"<<endl;
+    cout<<"----------------------------"<<endl;
     break;
 
 
@@ -249,6 +261,18 @@ int main() {
         }cout<<endl;
     }
     cout<<"inverted full pyramid"<<endl;
+    cout<<"----------------------------"<<endl;
+    for (int i = 1; i <=num; i++) {
+        for (int j = 1; j <= num + i - 1; j++) {
+            if (j <= num - i) {
+                cout << " ";
+            }else if (j == num - i + 1 || j == num + i - 1 || i == num){
+                cout << "*"; } else {
+                    cout << " ";
+                }
+        } cout<<endl;
+        }
+    cout<<"upward hallow full pyramid"<<endl;
     cout<<"----------------------------"<<endl;
     break;
 }
