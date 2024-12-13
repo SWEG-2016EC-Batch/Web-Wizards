@@ -1,5 +1,5 @@
-1. **Start**
-2. **Input**: Read an integer `number` from the user.
+1.start
+2.Read an integer `number` from the user.
 3. **Initialize**:
    - `product = 1` (to hold the product of even digits)
    - `hasEvenDigit = false` (flag to check if there are any even digits)
