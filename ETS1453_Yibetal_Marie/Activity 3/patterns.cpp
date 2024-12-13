@@ -50,6 +50,8 @@ int main() {
     }
     cout<<"left upward triangle with digits"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // normal half pyramid with letter
     letter1='a';
     for(int i=1;i<=5;i++){
@@ -61,6 +63,8 @@ int main() {
     }
      cout<<"upward half pyramid with letter"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // rectangle pattern with letter
     for(int i=1;i<=5;i++){
         for(int j=1;j<=5;j++){
@@ -71,6 +75,8 @@ int main() {
     }
     cout<<"rectangle pattern with letter"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // hallow rectangle
     for(int i=1;i<=7;i++){
         for(int j=1;j<=8;j++){
@@ -83,6 +89,8 @@ int main() {
     }
     cout<<"hallow rectangle"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // inverted half pyramid
     for(int i=6;i>=1;i--){
         for(int j=1;j<=i;j++){
@@ -91,6 +99,8 @@ int main() {
     }
     cout<<"inverted half pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // inverted hallow half pyramid
     for(int i=6;i>=1;i--){
         for(int j=1;j<=i;j++){
@@ -103,6 +113,8 @@ int main() {
     }
     cout<<"inverted hallow half pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // full pyramid
     for(int i=1;i<=6;i++){
         for(int j=6;j>=1;j--){
@@ -115,6 +127,8 @@ int main() {
     }
     cout<<"full pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // inverted full pyramid
     for(int i=6;i>=1;i--){
         for(int j=6;j>=1;j--){
@@ -127,6 +141,7 @@ int main() {
     }
     cout<<"inverted full pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
 
     for (int i = 1; i <= 6; i++) {
         for (int j = 1; j <= 6 + i - 1; j++) {
@@ -143,6 +158,8 @@ int main() {
     break;
 
 
+
+
     case 2:
 
     cout<<"Enter the size of sides of a pattern: ";
@@ -155,6 +172,8 @@ int main() {
     }
     cout<<"rectangle with digits"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // to draw rectangle with characters
     letter = 'A';
     for(int i=1;i<=num;i++){
@@ -165,6 +184,8 @@ int main() {
     }
     cout<<"rectangle with characters"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // to draw right upward triangle
     for(int i=1;i<=num;i++){
         for(int j=1;j<=i;j++){
@@ -174,6 +195,8 @@ int main() {
     cout<<"right upward triangle"<<endl;
     cout<<"----------------------------"<<endl;
     // normal left upward triangle with digits
+
+
     for(int i=1;i<=num;i++){
         for(int j=num;j>=1;j--){
             if(i>=j){
@@ -185,6 +208,8 @@ int main() {
     }
     cout<<"left upward triangle with digits"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // normal half pyramid with letter
     letter1='a';
     for(int i=1;i<=num;i++){
@@ -196,6 +221,8 @@ int main() {
     }
      cout<<"upward half pyramid with letter"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // rectangle pattern with letter
     for(int i=1;i<=num;i++){
         for(int j=1;j<=num;j++){
@@ -206,6 +233,8 @@ int main() {
     }
     cout<<"rectangle pattern with letter"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // hallow rectangle
     for(int i=1;i<=num;i++){
         for(int j=1;j<=num;j++){
@@ -218,6 +247,8 @@ int main() {
     }
     cout<<"hallow rectangle"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // inverted half pyramid
     for(int i=num;i>=1;i--){
         for(int j=1;j<=i;j++){
@@ -226,6 +257,8 @@ int main() {
     }
     cout<<"inverted half pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // inverted hallow half pyramid
     for(int i=num;i>=1;i--){
         for(int j=1;j<=i;j++){
@@ -238,6 +271,8 @@ int main() {
     }
     cout<<"inverted hallow half pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // full pyramid
     for(int i=1;i<=num;i++){
         for(int j=num;j>=1;j--){
@@ -250,6 +285,8 @@ int main() {
     }
     cout<<"full pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     // inverted full pyramid
     for(int i=num;i>=1;i--){
         for(int j=num;j>=1;j--){
@@ -262,6 +299,8 @@ int main() {
     }
     cout<<"inverted full pyramid"<<endl;
     cout<<"----------------------------"<<endl;
+
+
     for (int i = 1; i <=num; i++) {
         for (int j = 1; j <= num + i - 1; j++) {
             if (j <= num - i) {
