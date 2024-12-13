@@ -2,12 +2,10 @@
 using namespace std;
 int main () {
 
-int num, digit, result, counter=0, temp;
+int num, digit, result, counter=0;
 
 cout << "Enter a number " << endl;
 cin >> num;
-
-temp = num;
 
 while (num != 0) {
 
@@ -18,7 +16,7 @@ while (num != 0) {
     counter ++;
 }
 
-cout << "The number " << temp << " has " << counter << " digits.";
+cout << "The number has " << counter << " digits.";
 
 return 0; 
 }
