@@ -1,5 +1,5 @@
 # Problem Analysis   
-**Input:** A number.
+**Input:** A number.  
 **Output:** Total number of digits.
 
 # Operation:   
@@ -20,6 +20,5 @@
 5. Update counter: counter = counter + 1.
 6. If number is not equal to zero, go to step 4.
 7. Display the vaue of counter as number of digits.
-
-End.
+8. End.
  
