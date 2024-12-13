@@ -1,22 +1,26 @@
- #include <iostream>
- using namespace std;
+#include <iostream>
+using namespace std;
 
- int main() {
+int main() {
       
-  int num,temp,sum=0;
+  int num,rem,factorial=1,sum=0;
   cout<<"enter a number: ";
   cin>>num;
-
+  int temp = num;
                 
-                for (int i = 1; i <= (num / 2); i++) {
-                    if (num % i == 0) {
-                        sum += i;
+                while (temp > 0) {
+                    rem = temp % 10;
+                    
+                    for (int i = 1; i <= rem; i++) {
+                        factorial *= i;
                     }
+                    sum += factorial;
+                    temp /= 10;
                 }
                 if (sum == num) {
-                    cout << "The number is perfect.\n";
+                    cout << "The number is strong.\n";
                 } else {
-                    cout << "The number is not perfect.\n";
+                    cout << "The number is not strong.\n";
                 }
-                
+                return 0;
   }
