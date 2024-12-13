@@ -5,7 +5,7 @@
 1. **Declare Variables:**
    - `Test`, `Quiz`, `Project`, `Assignment`, `Final_exam` (float type)
    - `sum` (float type)
-   - `quitChoice` (char type)
+   
 
 2. **Start Loop for Repeated Calculations:**
    - **Prompt User for Assessment Inputs:**
@@ -36,9 +36,5 @@
 6. **Display Final Grade:**
    - Output the grade (A+, A, B+, etc.)
 
-7. **Prompt User for Another Calculation:**
-   - Ask if the user wants to calculate for another student.
-   - If user enters 'y' or 'Y', repeat from Step 2.
-   - Otherwise, terminate the program.
 
 ## End Program
