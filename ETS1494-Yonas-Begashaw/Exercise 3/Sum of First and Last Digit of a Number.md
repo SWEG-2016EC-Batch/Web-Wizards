@@ -1,27 +1,29 @@
 # Problem Analysis   
 **Input:** A number.  
-**Output:** Result.
+**Output:** Sum of first and last digit of a number.
 
 # Operation:   
 - Variable declaration that holds an input and operation results.
+- Initialize a variable sum to 0.
 - Input number.
-- Intitialize a variable sum to 0 and a variable i to 1.
-- If i is a factor of the number, update sum: sum = sum + i.
-- Update i: i = i + 1.
-- If i <= number go to step 3.
-- If sum - number = number, display "The number is a perfect number."
-- If sum - number not equal to number, display "The number isn't a perfect number."
+- Calculate last: last = number % 10.
+- Assign value for first: first = num.
+- Update first: first = first / 10.
+- If first >= 10, go to step 6.
+- Calculate sum: sum = first + last.
+- Display sum.
   
   
 # Pseudocode   
 1. Start.
-
-
-2. Intitialize a variable sum to 0 and a variable i to 1.
-3. If i is a factor of the number, update sum: sum = sum + i.
-4. Update i: i = i + 1.
-5. If i <= number go to step 3.
-6. If sum - number = number, display "The number is a perfect number."
-7. If sum - number not equal to number, display "The number isn't a perfect number."
-9. End.
+2. Initialize a variable sum to 0.
+3. Input number.
+4. Calculate last: last = number % 10.
+5. Assign value for first: first = num.
+6. Update first: first = first / 10.
+7. If first >= 10, go to step 6.
+8. Calculate sum: sum = first + last.
+9. Display sum.
+   
+End.
  
