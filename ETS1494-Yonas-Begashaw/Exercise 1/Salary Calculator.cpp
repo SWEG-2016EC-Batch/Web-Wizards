@@ -18,17 +18,17 @@ if (worked_hour > 40) {
 }
 
 
-if (base_salary >= 0 && base_salary <= 200 ) {
+if (base_salary >= 0 && base_salary < 200 ) {
     tax_rate = 0;
-} else if(base_salary > 200 && base_salary <= 600 ) {
+} else if(base_salary >= 200 && base_salary < 600 ) {
     tax_rate = 0.1;
-} else if(base_salary > 600 && base_salary <= 1200 ) {
+} else if(base_salary >= 600 && base_salary < 1200 ) {
     tax_rate = 0.15;
-} else if(base_salary > 1200 && base_salary <= 2000 ) {
+} else if(base_salary >= 1200 && base_salary < 2000 ) {
     tax_rate = 0.20;
-} else if(base_salary > 2000 && base_salary <= 3500 ) {
+} else if(base_salary >= 2000 && base_salary < 3500 ) {
     tax_rate = 0.25;
-} else if(base_salary > 3500 ) {
+} else if(base_salary >= 3500 ) {
     tax_rate = 0.30;
 }
   
