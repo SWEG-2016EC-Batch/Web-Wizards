@@ -24,6 +24,5 @@
 7. If first >= 10, go to step 6.
 8. Calculate sum: sum = first + last.
 9. Display sum.
-   
-End.
+10. End.
  
