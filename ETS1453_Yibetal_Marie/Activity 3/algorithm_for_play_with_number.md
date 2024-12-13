@@ -29,18 +29,19 @@ V-->|no|Z{choice=='i'}
 Z-->|yes|1{check it's perfect}
 1-->|yes|2[/print it's perfect/]
 1-->|no|3[/print it's not perfect/]
-Z-->|no|5[/read user_want/]
-5-->|y|B
-5-->|n|4[/terminate program/]
-3-->4
-2-->4
-Y-->4
-X-->4
-U-->4
-S-->4
-R-->4
-O-->4
-M-->4
-K-->4
-I-->4
-G-->4
+3-->5[/read user_want to contine or not/]
+2-->5
+3-->5
+2-->5
+Y-->5
+X-->5
+U-->5
+S-->5
+R-->5
+O-->5
+M-->5
+K-->5
+I-->5
+G-->5
+5-->|else|4[/terminate program/]
+
