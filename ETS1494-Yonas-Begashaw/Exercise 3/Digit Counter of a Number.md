@@ -18,7 +18,7 @@
 3. Calculate digit: digit = number % 10.
 4. Update number: number = number / 10.
 5. Update counter: counter = counter + 1.
-6. If number is not equal to zero, go to step 4.
+6. If number is not equal to zero, go to step 3.
 7. Display the vaue of counter as number of digits.
 8. End.
  
