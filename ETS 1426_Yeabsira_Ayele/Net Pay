@@ -1,0 +1,112 @@
+#include <iostream>
+using namespace std;
+int main() {
+double basic_salary,worked_hours, bonus_rate, bonus_payment, gross_salary, pension, tax_rate;  
+int count, temp, temp1;
+int max_attempts = 3, again =1;
+
+while(again==1) {
+  temp1 = 0;
+ while(temp1<max_attempts){
+     cout<<"Enter the basic salary: "<<endl;
+      cin>>basic_salary;
+     if ( cin.fail() || basic_salary <= 0 ) {
+         cin.clear();
+         cin.ignore();
+          temp1++;
+        cout << "Please enter numbers only. You have remaiing "<<max_attempts - temp1<<" chances." <<endl;
+            } else {
+                break;
+         }
+      }
+       if(max_attempts == temp1){
+          cout << "You have used all your chances. Please try again later." << endl;
+              return 1;
+            }
+  count = 0;
+  while(count<max_attempts){
+     cout<<"Enter your worked hours: "<<endl;
+      cin>>worked_hours;
+    if ( cin.fail() || worked_hours <= 0 ) {
+         cin.clear();
+         cin.ignore();
+         count++;
+        cout << "Please enter numbers only. You have remaiing "<<max_attempts - count<<" chances." <<endl;
+            }else{
+                break;
+         }
+      }
+       if(max_attempts==count){
+          cout << "You have used all your chances. Please try again later." << endl;
+              return 1;
+            }
+ 
+ if(worked_hours > 40){
+     temp = 0;
+   while(temp < max_attempts){
+        cout<<"Enter your bonus rate per hour in Birr: "<<endl;
+     cin>>bonus_rate;
+    if ( cin.fail() || bonus_rate <= 0 ) {
+         cin.clear();
+         cin.ignore();
+         temp++;
+        cout << "Please enter numbers only. You have remaiing "<<max_attempts - temp<<" chances." <<endl;
+            }else{
+                break;
+         }
+      }
+       if(max_attempts==temp){
+          cout << "You have used all your chances. Please try again later." << endl;
+              return 1;
+            }
+    
+ } else {
+     bonus_rate = 0;
+ }
+ 
+bonus_payment = (worked_hours - 40) * bonus_rate;
+gross_salary= basic_salary + bonus_payment;
+pension= basic_salary * 0.07;
+   
+  if (gross_salary <= 200){
+       tax_rate=0.0;
+   } else if (gross_salary <= 600){
+       tax_rate=0.10;
+   } else if (gross_salary <= 1200){
+       tax_rate=0.15;
+   } else if (gross_salary <= 2000){
+       tax_rate=0.20;
+   } else if (gross_salary <= 3500){
+       tax_rate=0.25;
+   } else {
+       tax_rate=0.30;
+   }
+    
+double income_tax= gross_salary * tax_rate;
+double net_salary= gross_salary - pension - income_tax;
+ 
+ cout<<"\n****************\n";
+ cout<<"Basic salary: "<< basic_salary<<" Br\n";
+ cout<<"Bonus payment: "<< bonus_payment<<" Br"<<endl;
+ cout<<"Gross salary: "<<gross_salary<<" Br\n";
+ cout<<"Pension: "<< pension<<" Br"<<endl;
+ cout<<"Income tax: "<< income_tax<<" Br\n";
+ cout<<"Net Salary: "
+<< net_salary<<" Br\n";
+cout<<"\n****************\n";
+   
+ //Ask to continue or terminate
+ cout << "Would you like to calculate again? Enter 1 for yes, 0 for no: ";
+cin >> again;
+
+    while (cin.fail() || (again != 0 && again != 1)) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Invalid input. Please enter 1 to continue or 0 to terminate: ";
+            cin >> again;
+    }
+    cin.ignore(1000, '\n');
+}
+cout << "Program terminated." << endl;
+    return 0;
+}
