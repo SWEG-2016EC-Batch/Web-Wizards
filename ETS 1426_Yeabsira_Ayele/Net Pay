@@ -10,7 +10,7 @@ while(again==1) {
  while(temp1<max_attempts){
      cout<<"Enter the basic salary: "<<endl;
       cin>>basic_salary;
-     if ( cin.fail() || basic_salary <= 0 ) {
+     if ( cin.fail() || basic_salary < 0 ) {
          cin.clear();
          cin.ignore();
           temp1++;
@@ -27,7 +27,7 @@ while(again==1) {
   while(count<max_attempts){
      cout<<"Enter your worked hours: "<<endl;
       cin>>worked_hours;
-    if ( cin.fail() || worked_hours <= 0 ) {
+    if ( cin.fail() || worked_hours < 0 ) {
          cin.clear();
          cin.ignore();
          count++;
@@ -46,7 +46,7 @@ while(again==1) {
    while(temp < max_attempts){
         cout<<"Enter your bonus rate per hour in Birr: "<<endl;
      cin>>bonus_rate;
-    if ( cin.fail() || bonus_rate <= 0 ) {
+    if ( cin.fail() || bonus_rate < 0 ) {
          cin.clear();
          cin.ignore();
          temp++;
