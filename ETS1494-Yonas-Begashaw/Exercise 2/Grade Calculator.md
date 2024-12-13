@@ -38,5 +38,5 @@
 14. If total mark >= 45 and total mark < 55, display "Your grade is C".
 15. If total mark >= 30 and total mark < 45, display "Your grade is D".
 16. If total mark < 30, display "Your grade is F".
-17.End/
+17.End.
  
