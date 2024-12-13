@@ -8,7 +8,7 @@
 3. Declare `userInput` for user choice.
 
 ## Input Handling
-4. **Repeat** the following steps until the user chooses to exit:
+4. 
    - **Input Base Salary**:
      - Prompt the user to enter `basic_salary`.
      - Validate input. If invalid, prompt again.
@@ -40,11 +40,6 @@
 10. Compute `net_salary = gross_salary - pension - tax`.
 11. Display `net_salary`.
 
-## User Continuation
-12. Prompt the user:
-    - Enter 'C' or 'c' to calculate for another person.
-    - Enter any other key to exit.
-13. If user chooses 'C' or 'c', repeat from step 4.
+
 
 ## End
-14. Stop.
