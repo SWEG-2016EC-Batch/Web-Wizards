@@ -70,4 +70,6 @@ int main() {
             if (player2Cards[i] == 'a') {
                 player2Sum += 11;
                 player2AceCount++;
-            } else if (player2Cards[i] == 't' || player2Cards[i] == 'j' ||
+            } else if (player2Cards[i] == 't' || player2Cards[i] == 'j' ||player2Cards[i] == 'q' || player2Cards[i] == 'k') {
+                player2Sum += 10;
+            }
