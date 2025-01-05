@@ -111,3 +111,42 @@ else {
             totalRounds++;
             continue;
         }
+
+// Player's turn
+        char action;
+        while (true) {
+            cout << player << "'s current sum: " << player1Sum << endl;
+            if (player1Sum > 21) {
+                cout << player << " is busted!\n";
+                break;
+            }
+
+            cout << player << ", do you want to hit (h) or stand (s)? ";
+            cin >> action;
+            action = tolower(action);
+
+            if (action == 's') break;
+            if (action != 'h') {
+                cout << "Invalid choice. Please choose 'h' to hit or 's' to stand.\n";
+                continue;
+            }
+
+            player1Cards[player1CardCount] = deck[rand() % 13];
+            cout << player << " drew: " << player1Cards[player1CardCount] << endl;
+
+            if (player1Cards[player1CardCount] == 'a') {
+                player1Sum += 11;
+                player1AceCount++;
+            } else if (player1Cards[player1CardCount] == 't'  player1Cards[player1CardCount] == 'j'  player1Cards[player1CardCount] == 'q' || player1Cards[player1CardCount] == 'k') {
+                player1Sum += 10;
+            } else {
+                player1Sum += (player1Cards[player1CardCount] - '0');
+            }
+
+            player1CardCount++;
+
+            while (player1Sum > 21 && player1AceCount > 0) {
+                player1Sum -= 10;
+                player1AceCount--;
+            }
+        }
