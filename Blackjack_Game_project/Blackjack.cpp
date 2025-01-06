@@ -9,7 +9,7 @@ int main() {
     srand(time(0)); // Seed for random number generation
 
     char deck[] = {'2', '3', '4', '5', '6', '7', '8', '9', 't', 'j', 'q', 'k', 'a'};
-    int totalRounds = 0, player1Wins = 0, player2Wins = 0, draws = 0; // Added draws counter
+    int totalRounds = 0, player1Wins = 0, player2Wins = 0, draws = 0; 
     char choice;
 
     while (true) {
@@ -70,7 +70,7 @@ int main() {
             if (player2Cards[i] == 'a') {
                 player2Sum += 11;
                 player2AceCount++;
-            } else if (player2Cards[i] == 't' || player2Cards[i] == 'j' ||player2Cards[i] == 'q' || player2Cards[i] == 'k') {
+            } else if (player2Cards[i] == 't' || player2Cards[i] == 'j' || player2Cards[i] == 'q' || player2Cards[i] == 'k') {
                 player2Sum += 10;
             }
 else {
@@ -137,7 +137,7 @@ else {
             if (player1Cards[player1CardCount] == 'a') {
                 player1Sum += 11;
                 player1AceCount++;
-            } else if (player1Cards[player1CardCount] == 't'  player1Cards[player1CardCount] == 'j'  player1Cards[player1CardCount] == 'q' || player1Cards[player1CardCount] == 'k') {
+            } else if (player1Cards[player1CardCount] == 't' || player1Cards[player1CardCount] == 'j' || player1Cards[player1CardCount] == 'q' || player1Cards[player1CardCount] == 'k') {
                 player1Sum += 10;
             } else {
                 player1Sum += (player1Cards[player1CardCount] - '0');
@@ -150,3 +150,77 @@ else {
                 player1AceCount--;
             }
         }
+// Dealer's turn
+        cout << dealer << "'s turn begins.\n";
+        while (true) {
+            cout << dealer << "'s current sum: " << player2Sum << endl;
+
+            if (player2Sum > 21) {
+                cout << dealer << " is busted!\n";
+                break;
+            }
+
+            if (player2Sum >= 17) {
+                cout << dealer << " chooses to stand.\n";
+                break;
+            }
+
+            cout << dealer << ", do you want to hit (h) or stand (s)? ";
+            cin >> action;
+            action = tolower(action);
+
+            if (action == 's') break;
+            if (action != 'h') {
+                cout << "Invalid choice. Please choose 'h' to hit or 's' to stand.\n";
+                continue;
+            }
+
+            player2Cards[player2CardCount] = deck[rand() % 13];
+            cout << dealer << " drew: " << player2Cards[player2CardCount] << endl;
+
+            if (player2Cards[player2CardCount] == 'a') {
+                player2Sum += 11;
+                player2AceCount++;
+            }
+else if (player2Cards[player2CardCount] == 't' || player2Cards[player2CardCount] == 'j'||player2Cards[player2CardCount] == 'q' || player2Cards[player2CardCount] == 'k') {
+                player2Sum += 10;
+            } else {
+                player2Sum += (player2Cards[player2CardCount] - '0');
+            }
+
+            player2CardCount++;
+
+            while (player2Sum > 21 && player2AceCount > 0) {
+                player2Sum -= 10;
+                player2AceCount--;
+            }
+        }
+
+        cout << player << "'s final sum: " << player1Sum << endl;
+        cout << dealer << "'s final sum: " << player2Sum << endl;
+
+        if (player1Sum > 21 && player2Sum > 21) {
+            cout << "Both players are busted! It's a draw.\n";
+            draws++; // Increment draws counter
+        } else if (player1Sum > 21) {
+            cout << dealer << " wins as " << player << " is busted!\n";
+            player2Wins++;
+        } else if (player2Sum > 21) {
+            cout << player << " wins as " << dealer << " is busted!\n";
+            player1Wins++;
+        } else if (player1Sum > player2Sum) {
+            cout << player << " wins with a higher score!\n";
+            player1Wins++;
+        } else if (player2Sum > player1Sum) {
+            cout << dealer << " wins with a higher score!\n";
+            player2Wins++;
+        } else {
+            cout << "It's a draw!\n";
+            draws++; // Increment draws counter
+        }
+
+        totalRounds++; // Increment total rounds
+    }
+
+    return 0;
+}
