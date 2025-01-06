@@ -226,5 +226,4 @@ else if (player2Cards[player2CardCount] == 't' ||  player2Cards[player2CardCount
     return 0;
 }
 
-    return 0;
-}
+    
