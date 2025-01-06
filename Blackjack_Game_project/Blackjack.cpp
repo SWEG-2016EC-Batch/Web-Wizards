@@ -182,7 +182,8 @@ else {
                 player2Sum += 11;
                 player2AceCount++;
             }
-else if (player2Cards[player2CardCount] == 't' || player2Cards[player2CardCount] == 'j'|| player2Cards[player2CardCount] == 'q' || player2Cards[player2CardCount] == 'k') {
+                
+else if (player2Cards[player2CardCount] == 't' ||  player2Cards[player2CardCount] == 'j' || player2Cards[player2CardCount] == 'q' || player2Cards[player2CardCount] == 'k') {
                 player2Sum += 10;
             } else {
                 player2Sum += (player2Cards[player2CardCount] - '0');
@@ -221,6 +222,9 @@ else if (player2Cards[player2CardCount] == 't' || player2Cards[player2CardCount]
 
         totalRounds++; // Increment total rounds
     }
+
+    return 0;
+}
 
     return 0;
 }
